@@ -2,7 +2,15 @@ package aaaaaa;
 
 public class ManipulacaoDeString {
 	private String salario, gratificacao, nome, sequencia,
-	nomeDep, dataDep, mostraDep, sexoDep;
+	nomeDep, dataDep, mostraDep, sexoDep, matricula;
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
 
 	public String getMostraDep() {
 		return mostraDep;
@@ -35,7 +43,7 @@ public class ManipulacaoDeString {
 		nome = x[1];
 		String sal = x[2];
 		String grat = x[3];
-		
+		matricula = seq;
 		mSeq(seq, n);
 		mGratificacao(grat);
 		mSalario(sal);
