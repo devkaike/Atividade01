@@ -1,5 +1,4 @@
 package aaaaaa;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -33,7 +32,7 @@ public class LeituraArq {
 				frase = in.readLine();
 				x.separaFrase(frase,seq);
 				//System.out.print(x.getSequencia()+" - "+x.getNome()+" - "+x.getSalario() +" - "+ x.getGratificacao()+"\n"+ x.getMostraDep());
-				Funcionario a = new Funcionario(x.getSequencia(), x.getNome(), x.getSalario(), x.getGratificacao());
+				Funcionario a = new Funcionario(x.getSequencia(), x.getMatricula(), x.getNome(), x.getSalario(), x.getGratificacao());
 				lista.add(a);seq++;
 				Filhos fi = new Filhos(x.getMostraDep());
 				listaF.add(fi);
@@ -46,7 +45,7 @@ public class LeituraArq {
 				a = lista.get(x);
 				Filhos n= listaF.get(x);
 				
-				ff += a.getSeq()+" - "+ a.getNome() +" - "+ a.getSalario() +" - "+ a.getGratificacao()+"\n"+n.getDados()+"\n";
+				ff += a.getSeq()+" - "+ a.getMatricula()+" - "+ a.getNome() +" - "+ a.getSalario() +" - "+ a.getGratificacao()+"\n"+n.getDados()+"\n";
 				//JOptionPane.showMessageDialog(null, a.getSeq()+" - "+ a.getNome() +" - "+ a.getSalario() +" - "+ a.getGratificacao()+"\n"+n.getDados()+"\n", "FUNCIONARIOS", x, null);
 			}
 			JOptionPane.showMessageDialog(null, ff, "FUNCIONARIOS", 1, null);
