@@ -1,13 +1,24 @@
 package aaaaaa;
 
 public class Funcionario {
-	String nome, salario, gratificacao, seq;
+	String nome, salario, gratificacao, seq,matricula;
 
-	public Funcionario(String sequencia, String nome2, String salario2, String gratificacao2) {
+	public Funcionario(String sequencia,String mat, String nome2, String salario2, String gratificacao2) {
 		seq = sequencia;
+		matricula = mat;
 		nome = nome2;
 		salario = salario2;
 		gratificacao  = gratificacao2;
+	}
+
+	
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
 	}
 
 	public String getNome() {
